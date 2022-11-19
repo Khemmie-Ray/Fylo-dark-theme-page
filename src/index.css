@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root { 
+  --DarkBlue1:hsl(217, 28%, 15%);
+  --DarkBlue2:hsl(218, 28%, 13%);
+  --DarkBlue3:hsl(216, 53%, 9%);
+  --DarkBlue4: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --LightRed: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: grey;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--DarkBlue2);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--White);
+  font-size: 14px;
+}
+
+/* ==================================
+            Typography
+================================== */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.links1 a,
+.links2 a {
+  color: var(--White);
+}
+
+nav a {
+  margin-left: 2.5em;
+  color: var(--Grey);
+}
+
+h1, a, .btn,
+h2, h4, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  font-size: .7rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.topContent > p {
+  font-size: 1.2rem;
+}
+
+h1, .subtitle {
+  font-size: 2.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.containerUser p {
+  margin: 0;
+  font-size: .5rem;
+}
+
+address a {
+  color: var(--Cyan);
+}
+
+/* ==================================
+              Layout
+================================== */
+
+header, .middleContent,
+.bottomContent,
+.quotesContent,
+.containerUser, 
+.forInput, .place,
+.footLinks, .socials {
+  display: flex;
+}
+
+header {
+  align-items: center;
+  width: 90%;
+  margin: 3em auto;
+}
+
+header, 
+.containerUser,
+.middleContent,
+.bottomContent,
+.quotesContent,
+.forInput, .place,
+.socials, .footLinks {
+  justify-content: space-between;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom: 2px solid grey;
+  color: var(--White);
+}
+
+.topContent {
+  width: 50%;
+  margin: 3em auto 10em auto;
+  text-align: center;
+}
+
+.topContent img {
+  width: 100%;
+}
+
+.topContent > p {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 2em;
+  width: 50%;
+}
+
+button {
+  font-weight: 700;
+  background-color: var(--Blue);
+  color: var(--White);
+}
+
+button, input {
+  padding: 1em;
+  border-radius: 50px;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--Cyan);
+}
+
+.middleContent {
+  width: 60%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.boxImg {
+  height: 70px;
+}
+
+.box {
+  width: 45%;
+  margin-bottom: 4em;
+}
+
+.bottomContent,
+.quotesContent {
+  width: 85%;
+  margin: 3em auto;
+}
+
+.productiveContent {
+  align-self: center;
+  width: 40%;
+}
+
+.bottomContent a {
+  color: var(--Cyan);
+  border-bottom: 1px solid var(--Cyan);
+  padding-bottom: .5em;
+}
+
+.bottomContent a:hover,
+.bottomContent a:focus {
+  color: var(--White);
+  border-bottom: 1px solid var(--White);
+}
+
+.arrowIcon {
+  vertical-align: middle;
+}
+
+.quoteBox {
+  width: 31%;
+  padding: 1.5em;
+  background-color: var(--DarkBlue1);
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px var(--DarkBlue4);
+}
+
+.profile {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.containerUser {
+  width: 70%;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.user {
+  width: 15%
+}
+
+.userInfo {
+  width: 82%;
+}
+
+article {
+  position: relative;
+  padding: .5em;
+}
+
+.quote {
+  position: absolute;
+  top: 6%;
+  left: 7%;
+  z-index: -1;
+}
+
+.popUp {
+  width: 60%;
+  background-color: var(--DarkBlue4);
+  padding: 1em;
+  margin: 3em auto -8em auto;
+}
+
+.access,
+.forInput,
+.container {
+  margin: 0 auto;
+}
+
+.access {
+  width: 75%;
+  text-align: center;
+}
+
+.forInput {
+  width: 85%;
+  margin-top: 2em;
+  padding: 1.5em;
+}
+
+input[type= text] {
+  width: 70%;
+}
+
+.smallerBtn {
+  width: 28%;
+}
+
+.footContainer {
+  background-color: var(--DarkBlue3);
+  height: 70vh;
+  padding: 1em;
+  z-index: -1;
+  position: absolute;
+}
+
+.container {
+  width: 85%;
+}
+
+.links1, 
+.links2,
+.contact {
+  width: 15%;
+  align-self: baseline;
+}
+
+.socials {
+  width: 20%;
+  padding: 0;
+}
+
+.contact img {
+  margin-right: .6em;
+}
+
+.place {
+  width: 30%;
+  padding: .5em;
+}
+
+.footLinks {
+  align-items: center;
+  margin: 2em 0;
+}
+
+.footlogo {
+  margin-top: 9em;
+  width: 10%;
+}
+
+.place {
+  align-items: center;
+}
+
+.place img {
+  align-self: baseline;
+}
+
+.place p {
+  margin-top: 0;
+  width: 90%;
+}
+
+.socials-img {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+.socials-img:first-child {
+  margin-left: 0;
+}
+
+address {
+  text-align: center;
+}
+
+/* ==================================
+           Media Queries
+================================== */
